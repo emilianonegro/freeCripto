@@ -1,0 +1,123 @@
+@media (max-width: 900px){
+    #nav{
+        display: grid;
+        grid-template-columns: 1fr 60px 1fr 1fr;
+        width: 100%;
+        height: 85px;
+    }
+    #navLista{
+        display: none;
+    }
+
+    #main{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: max-content;
+    }
+
+    .headerInicioImg{
+        display: none;
+    }
+    .headerInicioTxt {
+        width: 100%;
+    }
+    .headerInicioInfo{
+        margin: 100px 30px 30px 30px;
+    }
+    .headerInicioBtns{
+        justify-content: center;
+    }
+    .headerTitulo {
+        font-size: 3rem;
+    }
+    .headerSubTitulo{
+        width: 95%;
+    }
+    .mainInicioImg{
+        display: none;
+    }
+
+    .mainTitulo{
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .mainSubTitulo{
+        text-align: center;
+        width: 300px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    #conectarBilleteraNav{
+        width: 100px;
+    }
+
+    .popupContainer{
+        right: 4%;
+        width: 90%;        
+    }
+
+    .popUp{
+        margin-top: 2rem;
+        height: 500px;
+    }
+
+    .popUpContenedorForm{
+        height: 400px;
+        margin: 0;
+    }
+
+    .popUpContenedorCerrarImg{
+        top: -90px;
+        left: 300px;
+    }
+
+    #tarjetas{
+        flex-direction: column;
+        height: 700px;    
+    }
+
+    #tarjetasContenedorBtn{
+        width: 350px;
+    } 
+
+    .tarjetasCriptoUl{
+        grid-template-columns: 20px 45px 1fr 1fr 1fr;
+    }
+    .tarjetasCripto{
+        margin-bottom: 25px;
+        width: 350px;        
+    }
+
+    /* Seccion comprar en tradepage */
+    .tradeContainer {
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #fromCompraMontoAIngresar, #selectCripto, .fromCompraTotalIntercambiar{
+        width: 325px;
+    }
+
+    #criptoComprar, #montoIngresado, #criptoElegidaSimbolo, #montoComprar, #precioCritoElegida{
+        width: 175px;
+    }
+
+    #criptoElegidaSimbolo, #precioCritoElegida{
+        width: 100px;
+    }
+
+    .tradePage{
+        width: 100%;
+        padding-top: 6rem;
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .billetera{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+ }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCripto</title>
+
+    <link rel="icon" href="assets/images/ETH.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media900px.css">
+    <style id="dynamic-styles"></style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body data-dark>
+    <nav id="nav" class="navClaro" data-dark2>
+        <div id="navLogo" >
+            <a  href="index.html"><p class='navAp' data-dark2="data-dark2">FreeCripto</p></a>
+        </div>        
+        <div class='navContainerBtnModo'>
+            <button class="navBtnModo dark-theme-btn">🌙</button> 
+        </div>
+        <div  class="navBilleteraBtn">
+            <button id="conectarBilleteraNav">Conectar Billetera</button>
+        </div>
+        <div id="cerrarSesion" class="cerrarSesion none">
+            <p class="cerrarSesionP">LogOff</p>
+        </div>
+    </nav>
+    <div id="popupcontainer" class="popupContainer none">
+        <div id="popUp" class="popUp">
+            <div id="popUpContenedorCerrar">
+                <button class="btnPopupCerrar"><box-icon name='x'></box-icon></button>
+            </div>
+            
+            
+                <form class="popUpContenedorForm">
+                    <p class="popUpContenedorInputTxt">Conectar Billetera</p>
+                    <div class="popUpContenedorImg">
+                <img src="assets/images/ETH.png" alt="" class="popUpImg">
+                </div>
+                    <div id="popUpFormDiv">
+                        <input id='popUpFormInputId' type="text" placeholder="Ingrese Nombre Billetera" class="popUpContenedorFormInput">
+                    </div>                    
+                    <input id="popUpFormInputBtn" type="submit" class="popUpContenedorFromInputBts">
+                </form>
+            </div>
+    </div>
+
+    <main id="main" class="main" data-dark >
+    <header id="header" class="headerClaro" data-dark>
+        <div class="headerInicioImg">
+            <img src="assets/images/ETH.png" class="imgEth">
+        </div>
+        <div class="headerInicioInfo">
+            <div class="headerInicioTxt">
+                <h1 class="headerTitulo">Invierte en la revolución</h1>
+                <h3 class="headerSubTitulo" >Invierte en criptomonedas. Todo desde la misma aplicación. Abre una cuenta gratuita en cuestión de minutos e invierte las 24 hs.</h3>
+            </div>                
+            <div class="headerInicioBtns">
+                <div class="navBilleteraBtnTrade">
+                    <a id='btnTradePage' href="tradePage.html">Trade</a>
+                </div>
+            </div>                      
+        </div>
+    </header>
+    <section id="tarjetas" class="tarjetasClaro" data-dark>
+        <div id="cripto1">
+            <div id="tarjetasCripto1" class="tarjetasCripto tarjetasCriptoClaro">
+                <ul class="tarjetasCriptoUl">
+                    <li></li>
+                    <li></li>
+                    <li>CriptoMoneda</li>
+                    <li>Simbolo</li>
+                    <li>Precio</li>
+                </ul>
+            </div>
+        </div>
+        <div id="cripto2">
+            <div id="tarjetasContenedorBtn">
+                <button id="cryptosGanadoras" class="btnGanPerd btnGanador disable">↑</button>
+                <button id="cryptosPerdedoras" class="btnGanPerd btnPerdedor ">↓</button>
+            </div>        
+            <div id="tarjetasCripto2" class="tarjetasCripto tarjetasCriptoClaro">
+                <ul class="tarjetasCriptoUl">
+                    <li></li>
+                    <li></li>
+                    <li>CriptoMoneda</li>
+                    <li>Simbolo</li>
+                    <li>Precio</li>
+                </ul>
+            </div>
+            <div id="tarjetasCripto3" class="tarjetasCripto tarjetasCriptoClaro">
+                <ul class="tarjetasCriptoUl">
+                    <li></li>
+                    <li></li>
+                    <li>CriptoMoneda</li>
+                    <li>Simbolo</li>
+                    <li>Precio</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+    <footer id="footer" class="footerClaro" data-dark2>
+        <p>&#169 Emiliano Negro</p>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/App.js" type="module"></script>
+</body>
+</html>

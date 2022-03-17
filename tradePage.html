@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCripto</title>
+
+    <link rel="icon" href="assets/images/ETH.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media900px.css">
+    <style id="dynamic-styles"></style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body data-dark>
+    <nav id="nav" class="navClaro" data-dark2>
+        <div id="navLogo" >
+            <a  href="index.html"><p class='navAp' data-dark2="data-dark2">FreeCripto</p></a>
+        </div>        
+        <div class='navContainerBtnModo'>
+            <button class="navBtnModo dark-theme-btn">🌙</button> 
+        </div>
+        <div  class="navBilleteraBtn">
+            <button id="conectarBilleteraNav">Conectar Billetera</button>
+        </div>
+        <div id="cerrarSesion" class="cerrarSesion none">
+            <p class="cerrarSesionP">LogOff</p>
+        </div>
+    </nav>
+    <div id="popupcontainer" class="popupContainer none">
+        <div id="popUp" class="popUp">
+            <div id="popUpContenedorCerrar">
+                <button class="btnPopupCerrar"><box-icon name='x'></box-icon></button>
+            </div>
+            
+            
+                <form class="popUpContenedorForm">
+                    <p class="popUpContenedorInputTxt">Conectar Billetera</p>
+                    <div class="popUpContenedorImg">
+                <img src="assets/images/ETH.png" alt="" class="popUpImg">
+                </div>
+                    <div id="popUpFormDiv">
+                        <input id='popUpFormInputId' type="text" placeholder="Ingrese Nombre Billetera" class="popUpContenedorFormInput">
+                    </div>                    
+                    <input id="popUpFormInputBtn" type="submit" class="popUpContenedorFromInputBts">
+                </form>
+            </div>
+    </div>    
+    <main id="main" class="main" data-dark>
+        <div id="tradePage" class="tradePage">
+            <form id='formCompra' class='tradeContainer' data-dark2='data-dark2'>
+                <div class='tradeCard' >
+                    <div id='selectCripto'>
+                        <select name="criptoMoneda" id="criptoComprar" required>
+                            <option value="Cripto">Seleccione Criptomoneda</option>
+                        </select>
+                        <div id='precioActual'>
+                            <p id='precioCritoElegida'>Precio hoy</p>
+                        </div>
+                    </div>
+                    <div id='fromCompraMontoAIngresar'>
+                        <input id='montoIngresado' type="number" placeholder='Ingrese monto USDT' required>
+                    </div>        
+                    <div class='fromCompraTotalIntercambiar'>
+                        <p id='montoComprar'>Total a intercambiar</p>
+                        <p id='criptoElegidaSimbolo'>Simbolo</p>
+                    </div>
+                </div>
+                <div id='formContainerBtnCompra'>
+                    <button type="submit" id='finalizarCompra' class='btnComprarCripto'>Comprar</button>
+                    <p class='hidden'>💸 Primero conecta tú billetera 💸</p>
+                </div>
+            </form>
+
+        <div id="billetera" class="billetera" data-dark2>
+            <h3 class="billeteraTitulo">Billetera</h3>           
+            <div id='lista' class="billeteraCriptos"></div>
+            <button id='limpiarBilletera'>Vender Todo</button>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer id="footer" class="footerClaro" data-dark2>
+        <p>&#169 Emiliano Negro</p>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/App.js" type="module"></script>
+</body>
+</html>
